@@ -46,6 +46,8 @@ function add_cart(event, type, id) {
                 }
 
                 $(".product_title").text(data.data.name);
+                $(".cart_image_in").attr('src', data.data.img);
+
                 $(".product_color").text(color);
                 $(".product_size").text(size);
                 // $(".check_out_rul").attr("href", data.data.encode);

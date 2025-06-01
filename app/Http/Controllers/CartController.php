@@ -112,6 +112,10 @@ class CartController extends Controller
                 $product->encode = url('/checkouts') . '/' . Crypt::encryptString($product->id) . '?type=product';
                 $product->size = $size;
                 $product->color = $color;
+                $img = json_decode($product->image)[0] ?? '';
+                $product->img = $img;
+
+
 
 
                 return [

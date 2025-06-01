@@ -53,7 +53,7 @@ $cart_count=DB::table('cart')->where('user_id',auth()->user()->id)->where('statu
 
       <!-- Search Overlay -->
     <div class="search-overlay searchOverlay">
-        <form action="/" method="get">
+        <form action="{{url('/')}}" method="get">
         <input type="text" class="form-control" name="search" placeholder="Search here..." id="searchInput" style="width:400px;">
         <i class="fa fa-times close-btn" aria-hidden="true" id="closeSearch"></i>
         </form>

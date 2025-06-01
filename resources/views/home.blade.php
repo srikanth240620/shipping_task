@@ -90,7 +90,7 @@
     margin-top: 23px;
     text-align:center;">
     <h5>Search results</h5>
-<form action="/" method="get">
+<form action="{{url('/')}}" method="get">
  <input type="text" class="form-control" name="search" placeholder="Search here..." id="searchInput" value="{{request('search')}}" style="width:100%;">
 <div class='btn-holder mb-0'>
 
@@ -286,7 +286,7 @@ $search=request('search');
 </div>
 
 <div class="d-flex mt-2">
-    <img src="img/shopping.webp" width="100" height="100" alt="">
+    <img src="" width="100" class="cart_image_in" height="100" alt="">
     <div class="pl-2">
         <h6> <b class="product_title"></b></h6>
         <div>Size: <span class="product_size"></span></div>
